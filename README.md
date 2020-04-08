@@ -1,4 +1,8 @@
-# Cordova plugin for Brother Label Printers
+# Strivs Cordova plugin for Brother Label Printers
+
+## Fork From MenelicSoftw
+
+https://github.com/MenelicSoftware/cordova-plugin-brother-label-printer
 
 ## Supports Android and iOS
 
@@ -16,17 +20,12 @@ In your Cordova project, run the following command to install the plugin.
 ```
 cordova plugin add git+https://github.com/MenelicSoftware/cordova-plugin-brother-label-printer
 ```
-or
-
-```
-cordova plugin add cordova-plugin-brother-label-printer
-```
 
 And then read [usage](#usage) below.
 
 ## Help and Support
 
-Please do not email me for support or help with this plugin, use the issue tracker link above, so everyone will benefit from community questions and involvement, and I don't have to answer the same questions over and over for many individuals.
+This implementation is to service the needs first of Striv.  It is available for people to use but will only be maintained based on current needs
 
 This is a Cordova plugin, firstly. You should be familiar with the Cordova plugin system before you try to use this plugin. Fortunately, it's pretty straight forward and easy to understand.
 
@@ -51,15 +50,14 @@ PT-E800W, PT-D800W, PT-E850TKW
 PT-P900W, PT-P950NW
 ```
 
-__Tested models:__ `QL-720NW`, `QL-820NWB`
+__Tested models:__ `QL-820NWB`
 
-(if you have tried this with other models, please update this list and send a pull request)
 
 
 ## Supported interfaces (by this plugin):
 
 * Wi-Fi (Infrastructure mode)
-* Bluetooth (Android only, at the moment, iOS needs more work. See [PR10](https://github.com/gordol/cordova-brother-label-printer/pull/10)
+* Bluetooth - Updates have been made to support iOS bluetooth.  The device must first be paired with the phone to work though.  
 * USB
 
 
