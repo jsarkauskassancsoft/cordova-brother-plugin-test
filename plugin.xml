@@ -71,14 +71,16 @@
                 <param name="ios-package" value="BrotherPrinter"/>
             </feature>
         </config-file>
-            <!--
+            
                 <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
                     <array>
                         <string>com.brother.ptcbp</string>
                     </array>
                 </config-file>
-                <framework src="ExternalAccessory.framework" />
-        -->
+
+        <framework src="libc++.tbd" />
+        <framework src="libc++.1.tbd" />
+        <framework src="libc++abi.tbd" />
         <framework src="src/ios/libs/BRPtouchPrinterKit.framework" custom="true" />
         <header-file src="src/ios/BRBluetoothPrintOperation.h" />
         <source-file src="src/ios/BRBluetoothPrintOperation.m" />
